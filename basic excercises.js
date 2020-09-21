@@ -15,3 +15,15 @@ if (temperature <= 10){
 
 //Basic Exercise 2
 /* Create a program to find the highest value in an array. E.g. If we have the following values 1, 7, -3, 9 we should only get the highest value, number 9. */
+
+array = [77,1,777,-3,9];
+var maxValue = array[0];
+for (i=0; i<array.length; i++){
+    if (maxValue < array[i]){
+        maxValue = array[i]
+    }
+}
+console.log(maxValue);
+
+// Intermediate One:
+
