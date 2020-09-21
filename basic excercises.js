@@ -5,12 +5,12 @@ var temperature = Math.floor((Math.random() * 40)-5);
 //document.write(temperature);
 
 if (temperature <= 10){
-    document.write("It is "+ temperature+ " Degrees! The weather is cold! <br><img src='ice.jpg' alt='' style='width:50%'>")
+    document.write("It is "+ temperature+ " Degrees! The weather is cold! <br><img src='ice.jpg' alt='' style='width:50%'> <br>")
 
 } else if (10 < temperature && temperature < 32) {
-    document.write("It is "+ temperature+ " Degrees! The weather is moderate! <br><img src='tree.jpg' alt='' style='width:50%'> ")
+    document.write("It is "+ temperature+ " Degrees! The weather is moderate! <br><img src='tree.jpg' alt='' style='width:50%'><br>")
 } else {
-    document.write("It is "+ temperature+ " Degrees! The weather is hot! <br><img src='forest-fire.jpg' alt='' style='width:50%'>")
+    document.write("It is "+ temperature+ " Degrees! The weather is hot! <br><img src='forest-fire.jpg' alt='' style='width:50%'><br>")
 }
 
 //Basic Exercise 2
@@ -26,4 +26,39 @@ for (i=0; i<array.length; i++){
 console.log(maxValue);
 
 // Intermediate One:
+var grade = [76, 85, 65, 93, 81,100]
+var students = ["Martin", "Thomas", "Klaus", "Maria", "David","Robert"]
+for (var i = 0; i < grade.length; i++)
+{
+	//console.log(grade[i] + students[i]);
+
+	if (grade[i]<60){
+		document.write(students[i] + ", your grade is F! <br>")
+	} else if(grade[i] <70) /*&& grade[i]<=60)*/{
+		document.write(students[i] + ", your grade is D! <br>")
+
+	} else if(grade[i] <80) /*&& grade[i]<=70)*/{
+		document.write(students[i] + ", your grade is C! <br>")
+
+	} else if(grade[i] <90) /*&& grade[i]<=80)*/{
+		document.write(students[i] +", your grade is B! <br>")
+
+	} else if(grade[i] <=100)/*&& grade[i]<=90)*/{
+		document.write(students[i] +", your grade is A! <br>")
+
+	}
+
+} 
+
+var sum = 0;
+for (var i = 0; i < grade.length; i++){
+	sum += grade[i];
+}
+//console.log(sum / grade.length)
+document.write("The average grade is " + sum/grade.length)
+
+
+
+
+
 
